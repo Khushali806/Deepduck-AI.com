@@ -1,4 +1,5 @@
-* ::selection {
+<style>
+        * ::selection {
     color: white;
     background-color: black;
 }
@@ -48,7 +49,7 @@ header .logo img {
     height: 50%;
    padding-top: 5vh;
    background: url(image10.jpg) no-repeat; 
-   background-size: 100% 30vw;
+   background-size: 100% 50vw;
    box-shadow: 0 12px 14px ;
 }
 
@@ -64,6 +65,39 @@ header .logo img {
     line-height: 1vw;
     letter-spacing: -6px;
     padding: 10px 10px 10px 10px;
+}
+
+.slide-text {
+    color: white;
+    font-size: 1.8vw;
+    margin-top:5vw; 
+    line-height:1vw;
+    opacity: 0;
+    font-size: 1vw;
+    font-family: futura;
+     line-height: 0%;
+    text-align: center;
+    filter: blur(5px);
+    position: relative;
+    animation: slideIn 1s forwards;
+}
+
+.slide-text:nth-child(3) { animation-delay: 3s; }
+.slide-text:nth-child(4) { animation-delay: 5s; }
+.slide-text:nth-child(5) { animation-delay: 7s; }
+.slide-text:nth-child(6) { animation-delay: 9s; }
+
+@keyframes slideIn {
+    0% {
+        left: -50px;
+        opacity: 0;
+        filter: blur(5px);
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 #about {
@@ -171,3 +205,4 @@ footer {
     background: #333;
     color: white;
 }
+    </style>
