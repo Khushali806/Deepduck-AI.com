@@ -1,2 +1,0 @@
-# Deepduck AI.com
-
